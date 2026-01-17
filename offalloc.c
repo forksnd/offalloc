@@ -407,7 +407,7 @@ int oa_allocate(oa_allocator_t *self, uint32_t size,
     return 0;
 }
 
-void oa_free(oa_allocator_t* self, oa_allocation_t *allocation)
+void oa_free(oa_allocator_t *self, oa_allocation_t *allocation)
 {
     if (allocation->index == OA_INVALID_INDEX) return;
     if (!self->nodes) return;
